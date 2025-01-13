@@ -30,3 +30,8 @@ Import React CDN to your index.html
 
 ### What is CrossOrigin?
 
+### Why these two links for CDN? Why not only one ?
+* React works on Browsers as well as Mobile phones. React for Browsers, React Native, React 3D.
+* File #1 is pure react code
+* File #2 is bridge between React & Browsers to connect to DOM
+
