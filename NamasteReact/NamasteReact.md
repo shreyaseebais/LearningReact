@@ -17,4 +17,15 @@
 | 10 | [](#)                                                                                            |
 
 
-### question number 1 
+### How to make a JS project React project?
+
+Import React CDN to your index.html
+
+```html
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+```
+
+## What is CDN?
+
+## What is CrossOrigin?
