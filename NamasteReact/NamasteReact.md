@@ -115,4 +115,48 @@ const parent =
     );
 ```
 
-## 
+## What is package.json
+It serves as the configuration file for your project, managing metadata, dependencies, scripts, and other settings.
+
+* package.json is a configuration for npm
+* devDependencies: Lists tools and packages needed only for development (e.g., testing libraries, bundlers).
+* dependencies: Lists the libraries and packages required for the project to run.
+* peerDependencies: Lists packages that your package expects to work alongside.
+* optionalDependencies: Dependencies that are optional for the project.
+
+
+## Why do we install Parcel ?
+
+npm install parcel
+
+Parcel is a zero-config bundler for web applications. It helps bundle all your project's assets (JavaScript, CSS, HTML, images, etc.) into optimized files for production. 
+* Zero configuration needed for most projects.
+* Fast bundling with caching and parallelization.
+* Built-in support for modern JavaScript and TypeScript.
+* Support for Hot Module Replacement (HMR) during development.
+
+
+## what is ~ or ^ before a node package version like "react": "^18.0.0" ?
+1. Caret (^)
+* Allows updates to the latest minor version.
+* Example: "react": "^18.0.0"
+    * Matches: 18.0.1, 18.1.0, 18.2.3
+    * Does NOT match: 19.0.0 (major version change)
+
+2. Tilde (~)
+* Allows updates to the latest patch version.
+* Example: "react": "~18.0.0"
+    * Matches: 18.0.1, 18.0.5
+    * Does NOT match: 18.1.0 or 19.0.0
+
+3. No Symbol
+* Specifies an exact version.
+    * Example: "react": "18.0.0"
+    * Matches only 18.0.0.
+
+
+**Semantic Versioning (SemVer)**
+Most Node.js packages follow Semantic Versioning (MAJOR.MINOR.PATCH):
+* MAJOR: Breaking changes.
+* MINOR: Backward-compatible new features.
+* PATCH: Bug fixes and small improvements.

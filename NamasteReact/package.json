@@ -10,5 +10,8 @@
     "react"
   ],
   "author": "Shreyasee",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
 }
