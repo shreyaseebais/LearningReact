@@ -1,4 +1,6 @@
-# LearningReact
+# NamasteReact
+# Akshay is a great teacher ! Much Much thanks to his clear concepts.
+
 
 ### Table of Contents
 
