@@ -1,0 +1,14 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "Awesome teaching by Akshay Saini",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Shreyasee",
+  "license": "ISC"
+}
