@@ -1,8 +1,8 @@
 # NamasteReact
-# Akshay is a great teacher ! Much Much thanks to his clear concepts.
+### Akshay is a great teacher ! Much Much thanks to his clear concepts.
 
 
-### Table of Contents
+## Table of Contents
 
 | No. | Questions                                                                                       |
 | --- | ------------------------------------------------------------------------------------------------| 
@@ -17,7 +17,7 @@
 | 10 | [](#)                                                                                            |
 
 
-### How to make a JS project React project?
+## How to make a JS project React project?
 
 Import React CDN to your index.html
 
@@ -26,6 +26,7 @@ Import React CDN to your index.html
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 ```
 
-## What is CDN?
+### What is CDN?
 
-# What is CrossOrigin?
+### What is CrossOrigin?
+
