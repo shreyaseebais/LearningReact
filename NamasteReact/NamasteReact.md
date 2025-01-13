@@ -28,4 +28,4 @@ Import React CDN to your index.html
 
 ## What is CDN?
 
-## What is CrossOrigin?
+# What is CrossOrigin?
