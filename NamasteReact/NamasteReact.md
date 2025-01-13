@@ -35,3 +35,26 @@ Import React CDN to your index.html
 * File #1 is pure react code
 * File #2 is bridge between React & Browsers to connect to DOM
 
+
+## How would you render React from index.html?
+```html
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        const heading = React.createElement("h1", {}, "Hello World from REACT !");
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+
+        root.render(heading);
+    </script>
+```
+
+1. You want to expose here <div id="root"></div>
+2. Imported React CDNs
+3. create an h1 element using React 
+4. create root using ReactDOM
+5. render the html element(step3) you have created to root(step4)
+
+
+
