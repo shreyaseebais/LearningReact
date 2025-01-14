@@ -2,7 +2,6 @@
   "name": "namastereact",
   "version": "1.0.0",
   "description": "Awesome teaching by Akshay Saini",
-  "main": "app.js",
   "scripts": {
     "test": "jest"
   },
@@ -12,6 +11,11 @@
   "author": "Shreyasee",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.13.3"
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }

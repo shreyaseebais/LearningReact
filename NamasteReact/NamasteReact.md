@@ -134,6 +134,20 @@ Parcel is a zero-config bundler for web applications. It helps bundle all your p
 * Fast bundling with caching and parallelization.
 * Built-in support for modern JavaScript and TypeScript.
 * Support for Hot Module Replacement (HMR) during development.
+* It has File watching Algorithm- Written in C++
+* Faster build- Because it is caching under .parcel-cache, so reusing the cache.
+* Image Optimization
+* Minification
+* Bundling
+* Compressing
+* Consistent Hashing 
+* Code Splitting
+* Differential Bundling - support older browsers 
+* Error Handling
+* HTTPS 
+* Tree shaking- remove unused code for you.
+Read parcel.js documentation.
+
 
 
 ## what is ~ or ^ before a node package version like "react": "^18.0.0" ?
@@ -160,3 +174,17 @@ Most Node.js packages follow Semantic Versioning (MAJOR.MINOR.PATCH):
 * MAJOR: Breaking changes.
 * MINOR: Backward-compatible new features.
 * PATCH: Bug fixes and small improvements.
+
+
+## What is package-lock.json?
+* package.json has approximate versions ~ or ^ 
+while package-lock.json keeps a track of exact version of all packages in package-lock.json
+
+* integrity : "hash"
+It keeps a track of exact hash
+
+
+## npm vs npx
+* npm contains packages to be installed 
+* npx executes 
+
