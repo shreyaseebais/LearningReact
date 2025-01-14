@@ -201,9 +201,9 @@ can be written as
 
 
 ### What is babel?
-Babel is in Parcel
-babel converts a JSX declaration into React.createElement
-It's an opensource Javascript compiler.
+* Babel is called by Parcel.
+* Babel converts a JSX declaration into React.createElement
+* It's an opensource Javascript compiler.
 
 <div>
 <p align="center">
