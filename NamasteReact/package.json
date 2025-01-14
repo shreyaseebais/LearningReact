@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Awesome teaching by Akshay Saini",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [
     "react"
@@ -17,5 +19,8 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
-  }
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
 }

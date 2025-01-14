@@ -188,3 +188,25 @@ It keeps a track of exact hash
 * npm contains packages to be installed 
 * npx executes 
 
+
+
+### What is JSX ?
+JSX is HTML-like or XML-like syntax to replace React elements
+
+For eg.
+React.createElement("h1", {id: "heading"}, "Hello World !"),
+
+can be written as
+<h1 id=heading>Hello World !</h1>
+
+
+### What is babel?
+Babel is in Parcel
+babel converts a JSX declaration into React.createElement
+It's an opensource Javascript compiler.
+
+<div>
+<p align="center">
+    <img src="./images/babelCodeConversion.png" alt="Javascript Engine" width="70%">
+</p>
+</div>
