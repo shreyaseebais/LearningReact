@@ -17,6 +17,12 @@
 | 10 | [](#)                                                                                            |
 
 
+
+## Extensions you might need 
+Better Comments
+Prettier
+Bracket Pair Colorization 
+
 ## What's the easiest framework to Migrate existing Javascript project ?
 React is easiest to migrate existing JS project, because you can also simply import CDN and work on the same js file.
 While other frameworks require to create a complete project structure then start.
@@ -210,3 +216,20 @@ can be written as
     <img src="./images/babelCodeConversion.png" alt="Javascript Engine" width="70%">
 </p>
 </div>
+
+
+## What is React component?
+Its simply a javascript function
+1. Class based components- Old Nobody uses it now.
+2. Functional components - New
+
+```javascript
+    const HeadingComponent = () =>{
+        return <h1 className="heading">Hello World !</h1>
+    }
+```
+
+is equivalent to
+```javascript
+   const HeadingComponent = () =>(<h1 className="heading">Hello World !</h1>); 
+```
