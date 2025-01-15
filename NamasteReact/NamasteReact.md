@@ -200,10 +200,14 @@ It keeps a track of exact hash
 JSX is HTML-like or XML-like syntax to replace React elements
 
 For eg.
+```javascript
 React.createElement("h1", {id: "heading"}, "Hello World !"),
+```
 
 can be written as
-<h1 id=heading>Hello World !</h1>
+```javascript
+<h1 id = "heading" >Hello World !</h1>
+```
 
 
 ### What is babel?
@@ -216,6 +220,7 @@ can be written as
     <img src="./images/babelCodeConversion.png" alt="Javascript Engine" width="70%">
 </p>
 </div>
+
 
 
 ## What is React component?
@@ -233,3 +238,24 @@ is equivalent to
 ```javascript
    const HeadingComponent = () =>(<h1 className="heading">Hello World !</h1>); 
 ```
+
+
+## What is Component composition
+Composing one component to another component.
+
+
+### Functional component
+It's a normal function which returns some piece of React code.
+
+
+## root.render(<ComponentName/>)
+root.render transforms everything to html
+
+
+## { }
+If you send data inside these { }, it doesnot blindly runs what's inside { }, it sanitizes the expression and prevents malfunctioning.
+It's secure.
+
+
+
+
