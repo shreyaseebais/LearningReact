@@ -206,7 +206,7 @@ React.createElement("h1", {id: "heading"}, "Hello World !"),
 
 can be written as
 ```javascript
-<h1 id = "heading" >Hello World !</h1>
+< h1 id = "heading" >Hello World !<h1>
 ```
 
 
