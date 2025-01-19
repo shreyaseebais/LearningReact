@@ -1,3 +1,4 @@
+import { CORS_PROXY, SWIGGY_API_URL } from "../utils/constants";
 import RestautantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { useEffect, useState } from "react";
@@ -13,10 +14,11 @@ const Body = () => {
         fetchData();
     }, []);
 
-    const CORS_PROXY ="https://corsproxy.io"
-    const SWIGGY_API_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.542861&lng=73.8904198&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    const PROXY_URL = CORS_PROXY;
+    const API_URL = SWIGGY_API_URL;
     const fetchData = async() => {
-        const data = await fetch(SWIGGY_API_URL)
+        console.log('fetchData()')
+        const data = await fetch(API_URL)
        
         const json = await data.json();
         setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
