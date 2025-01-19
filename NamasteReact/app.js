@@ -2,7 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
+import About from "./src/components/About";
 import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 
 const AppLayout = () => {
     const [userName, setUserName] = useState();
@@ -11,7 +13,7 @@ const AppLayout = () => {
     useEffect(() => {
         // Make an API call and send username and password
         const data = {
-        name: "Akshay Saini",
+        name: "Shreya",
         };
         setUserName(data.name);
     }, []);
@@ -24,6 +26,18 @@ const AppLayout = () => {
         </div>
     )
 }
+
+const appRouter = Routes([
+    {
+        path: "/",
+        element: <AppLayout/>
+    },
+    {
+        path: "/about",
+        element: <About/>
+    }
+])
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

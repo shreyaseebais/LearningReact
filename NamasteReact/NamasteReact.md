@@ -257,5 +257,17 @@ If you send data inside these { }, it doesnot blindly runs what's inside { }, it
 It's secure.
 
 
+### useEffect() calling 
 
+```javascript
+ useEffect(()=>{
+        console.log('If dependency array not mentioned : Useeffect called after everytime the containing component renders');
+    }, []);
+```
+
+```javascript
+    useEffect(()=>{
+        console.log('If some dependency array[btnNameVariable]: Useeffect called only once when the containing component renders');
+    },[btnNameVariable] );
+```
 

@@ -14,6 +14,8 @@ const Body = () => {
         fetchData();
     }, []);
 
+    console.log('Body rendered ')
+    
     const PROXY_URL = CORS_PROXY;
     const API_URL = SWIGGY_API_URL;
     const fetchData = async() => {

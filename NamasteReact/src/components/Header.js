@@ -1,11 +1,16 @@
 import {LOGO_URL} from "../utils/constants";
-import { useState, useContext } from "react";
+import { useState, useContext, useDeferredValue, useEffect } from "react";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 
 const Header = () =>{
     const [btnNameReact, setBtnNameReact]=useState("Login");
     console.log("Header render");
+
+    useEffect(()=>{
+        console.log('If array not mentioned : Useeffect called after everytime the containing component renders');
+    },[]);
+
     const onlineStatus = useOnlineStatus();
     const { loggedInUser } = useContext(UserContext);
 
