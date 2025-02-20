@@ -1,6 +1,11 @@
 import { Link } from "react-router";
+import styled from "styled-components";
 
 export default function UserList() {
+  const MarginDiv = styled.div`
+    marginleft: 3%;
+  `;
+  
   const userData = [
     { id: 1, name: "Motu" },
     { id: 2, name: "Patlu" },
@@ -17,7 +22,7 @@ export default function UserList() {
     { id: 13, name: "Ginni" },
   ];
   return (
-    <div style={{ marginLeft: "3%" }}>
+    <MarginDiv>
       <h1>Users list page</h1>
       <ul>
         {userData.map((el) => (
@@ -30,6 +35,6 @@ export default function UserList() {
           </li>
         ))}
       </ul>
-    </div>
+    </MarginDiv>
   );
 }

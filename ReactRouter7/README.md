@@ -126,3 +126,4 @@ React Router v6 supports error handling via an errorElement property.
     errorElement={<ErrorPage />}
     />
 ```
+
