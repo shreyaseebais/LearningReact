@@ -322,12 +322,12 @@ is called after the component is rendered.
 ```
 Sequence : 
 
-Parent Constructor
-Parent Render
-FirstChild Constructor
-FirstChild Render
-SecondChild Constructor
-SecondChild Render
-FirstChild Component Did Mount 
-SecondChild Component Did Mount 
-Parent Component Did Mount 
+1. Parent Constructor
+2. Parent Render
+3. FirstChild Constructor
+4. FirstChild Render
+5. SecondChild Constructor
+6. SecondChild Render
+7. FirstChild Component Did Mount 
+8. SecondChild Component Did Mount 
+9. Parent Component Did Mount 
