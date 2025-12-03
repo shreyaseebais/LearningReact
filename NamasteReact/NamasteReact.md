@@ -1,5 +1,5 @@
 # NamasteReact
-### Akshay is a great teacher ! Much Much thanks to his clear concepts.
+### Much thanks to Akshay's clear concepts !
 
 
 ## Table of Contents
@@ -277,7 +277,11 @@ is called after the component is rendered.
 
 
 ### React Component Lifecycle 
-
+<div>
+<p align="center">
+    <img src="./images/reactLifecycle.png" alt="Javascript Engine" width="70%">
+</p>
+</div>
 
 ```javascript
     Parent(){
