@@ -186,7 +186,7 @@ Most Node.js packages follow Semantic Versioning (MAJOR.MINOR.PATCH):
 * package.json has approximate versions ~ or ^ 
 while package-lock.json keeps a track of exact version of all packages in package-lock.json
 
-* integrity : "hash"
+* integrity : "hash_12jkbwehjvdg873yr498hdnkjsfndoi"
 It keeps a track of exact hash
 
 
@@ -234,10 +234,13 @@ Its simply a javascript function
     }
 ```
 
-is equivalent to
+is EQUIVALENT  to
+
 ```javascript
    const HeadingComponent = () =>(<h1 className="heading">Hello World !</h1>); 
 ```
+
+*whether you write return or not.
 
 
 ## What is Component composition
@@ -259,6 +262,7 @@ It's secure.
 
 ### useEffect() calling 
 
+is called after the component is rendered. 
 ```javascript
  useEffect(()=>{
         console.log('If dependency array not mentioned : Useeffect called after everytime the containing component renders');
@@ -271,3 +275,59 @@ It's secure.
     },[btnNameVariable] );
 ```
 
+
+### React Component Lifecycle 
+
+
+```javascript
+    Parent(){
+        constructor(){
+            console.log("Parent Constructor")
+        }
+        componentDidMount(){
+            console.log("FirstChild Component Did Mount")
+        }
+        render(){
+            console.log("Parent Render")
+            return (
+                <FirstChild>
+                <SecondChild>
+            )
+        }
+    }
+
+    FirstChild(){
+        constructor(){
+            console.log("FirstChild Constructor")
+        }
+        componentDidMount(){
+            console.log("FirstChild Component Did Mount")
+        }
+        render(){
+            console.log("FirstChild Render")
+        }
+    }
+
+    SecondChild(){
+       constructor(){
+            console.log("SecondChild Constructor")
+        }
+        componentDidMount(){
+            console.log("SecondChild Component Did Mount")
+        }
+        render(){
+            console.log("SecondChild Render")
+        }
+    }
+```
+Sequence : 
+
+Parent Constructor
+Parent Render
+FirstChild Constructor
+FirstChild Render
+SecondChild Constructor
+SecondChild Render
+FirstChild Component Did Mount 
+SecondChild Component Did Mount 
+Parent Component Did Mount 
